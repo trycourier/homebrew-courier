@@ -3,7 +3,7 @@ cask "courier" do
   name "courier"
   desc "The official Courier CLI for managing notifications from the command line."
   homepage "https://courier.com"
-  version "3.1.5"
+  version "3.1.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,22 +18,22 @@ cask "courier" do
   on_macos do
     on_intel do
       url "https://github.com/trycourier/courier-cli/releases/download/v#{version}/courier_#{version}_macos_amd64.zip"
-      sha256 "ab7512040600f9d1fa922a6a2e6cd0f7c9b30fcf427468e2b87f050c86f0f45b"
+      sha256 "c3bb873e6a12cccf8e2d5938137f9031df551ae1205b592b4abeb0a502d6a2e1"
     end
     on_arm do
       url "https://github.com/trycourier/courier-cli/releases/download/v#{version}/courier_#{version}_macos_arm64.zip"
-      sha256 "d4ba0b1cc80500c48776dacd1da59c0c8b5cfbe25b6040a9787f499cdbf26aba"
+      sha256 "2db97ca7888fb136681fef948e3a0c862f469b4e56854a75316ccf5178c4fbc6"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/trycourier/courier-cli/releases/download/v#{version}/courier_#{version}_linux_amd64.tar.gz"
-      sha256 "21682511c5787df6c506496606a03cf825deba65e7c36d7dcd02c588a3c4c489"
+      sha256 "4053356ab08302f29f7790c4739ce064625b9b6aab90cab0aca276bc3d43a2ad"
     end
     on_arm do
       url "https://github.com/trycourier/courier-cli/releases/download/v#{version}/courier_#{version}_linux_arm64.tar.gz"
-      sha256 "757464b8dbb5cfdb77aec8bfd2f93d08f0415cd1bb344953ceb1b5982f39d899"
+      sha256 "f46efb96c8c3d5ac2b77afbfa9caaed55396db11e79347d13e3f79e2c1fa51bd"
     end
   end
 
