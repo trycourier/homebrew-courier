@@ -1,28 +1,17 @@
-# Homebrew Tap for Courier CLI
+# Homebrew Tap for Courier CLI (Deprecated)
 
-Official [Homebrew](https://brew.sh) tap for the [Courier CLI](https://github.com/trycourier/courier-cli).
+This Homebrew tap is no longer maintained. The Courier CLI is now distributed via npm.
 
-## Install
-
-```bash
-brew install trycourier/courier/courier
-```
-
-## Upgrade
+## Install via npm
 
 ```bash
-brew upgrade courier
-```
-
-## Usage
-
-```bash
-export COURIER_API_KEY=your_api_key
-courier --help
+npm install -g @trycourier/cli
 ```
 
 ## Other install methods
 
-- **npm**: `npm install -g @trycourier/cli`
-- **Go**: `go install github.com/trycourier/courier-cli/cmd/courier@latest`
 - **Binary**: [GitHub Releases](https://github.com/trycourier/courier-cli/releases)
+
+## Why?
+
+macOS Gatekeeper blocks unsigned binaries distributed through Homebrew casks, causing a poor install experience. npm handles platform-specific binary distribution without this issue.
